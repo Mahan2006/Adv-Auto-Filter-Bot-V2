@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG
+# (c) @Mahan_Official_Admin
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -90,7 +90,7 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('Developer', url='https://t.me/Mahan_Official_Admin'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/😤')
+        InlineKeyboardButton('Source Code 🧾', url ='😤')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/MahanMVGroup')
     ],[
