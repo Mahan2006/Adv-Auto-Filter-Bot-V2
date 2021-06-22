@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/Mahan_Official_Admin"
+                                    'Join Our Channel', url="https://t.me/MahanCreations"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/Mahan_Official_Admin"
+                                    'Join Our Channel', url="https://t.me/MahanCreations"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/Mahan_Official_Admin"
+                                    'Join Our Channel', url="https://t.me/MahanCreations"
                                 )
                         ]
                     ]
@@ -88,13 +88,12 @@ async def start(bot, update):
         
         return
 
-    buttons = [
-        InlineKeyboardButton('Developer', url='https://t.me/Mahan_Official_Admin')
-    ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/MahanMVGroup')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
-    ]
+    buttons = [[
+            InlineKeyboardButton('My Creator', url='https://t.me/Mahan_Official_Admin'),
+            InlineKeyboardButton('Support Group', url ='https://t.me/MahanMvgroup')
+        ],[
+            InlineKeyboardButton('Close 🔐', callback_data="close")
+        ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
@@ -111,10 +110,8 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
-    ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('Channel', url='t.me/MahanMVMovies'),
+        InlineKeyboardButton('Group', url='t.me/MahanMVGroup')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
