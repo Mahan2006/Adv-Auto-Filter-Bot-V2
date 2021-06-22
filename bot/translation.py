@@ -8,9 +8,6 @@ class Translation(object):
 <i>Am Just A Auto Filter Bot....😉
 
 I was Made only for @MahanMVGroup, you can use me there.
-
-For More Details Click Help Button Below..
-@MahanMVGroup
 </i>"""    
     
-    HELP_TEXT = """JOIN OUR GROUP AND CHANNEL FOR HELP"""
+    HELP_TEXT = """I cannot help you here.😅 \n\nJoin our channel and group for help"""
