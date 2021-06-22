@@ -88,13 +88,13 @@ async def start(bot, update):
         
         return
 
-    buttons = [[
+    buttons = [
         InlineKeyboardButton('Developer', url='https://t.me/Mahan_Official_Admin')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/MahanMVGroup')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
-    ]]
+    ]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
