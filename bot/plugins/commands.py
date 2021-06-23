@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        caption = """Nice to meet you here 💞\n\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯\n➩ Group : @MahanMVGroup\n➩Channel :@MahanMVMovies\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯"""
         
         if file_type == "document":
         
