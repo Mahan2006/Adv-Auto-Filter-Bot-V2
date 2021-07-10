@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = """Nice to meet you here 💞\n\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯\n➩ Group : @MahanMVGroup\n➩Channel :@MahanMVMovies\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯"""
+        caption = """Nice to meet you here 💞\n\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯\n➩ Group : @KannadaMVRequest\n➩Channel :@MahanCreations\n✯ ━━━━━━━ ✧ ━━━━━━━━ ✯"""
         
         if file_type == "document":
         
