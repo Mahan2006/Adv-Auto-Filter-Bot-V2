@@ -1639,15 +1639,16 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Creator', url='https://t.me/Mahan_Official_Admin'),
-            InlineKeyboardButton('Support Group', url ='https://t.me/MahanMvgroup')
+            InlineKeyboardButton('⭕️ Channel ⭕️', url='t.me/MahanCreations'),
+            InlineKeyboardButton('⭕️ Group ⭕️', url='https://t.me/KannadaMvgroup')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data="close")
+            InlineKeyboardButton('Source code', callback_data="source_code")
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
         
-        await update.message.edit_text(
+        await update.message.delete()
+        await update.message.reply_text(
             Translation.START_TEXT.format(update.from_user.mention),
             reply_markup=reply_markup,
             parse_mode="html",
@@ -1686,6 +1687,8 @@ async def callback_data(bot, update: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode="html"
         )
+    elif query_data == "source_code": 
+        await update.message.reply_sticker("CAACAgUAAxkBAAEKxfRg6crnpagYtfmsosDAlKeyGtfsGwAC0wIAAgLtGVWFzPVPVa_P6CAE")
 
 
     elif query_data == "close":
