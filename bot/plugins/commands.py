@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @Mahan_Official_Admin
+# (c) @Mahan_Official_Admin | @MahanMVAdmin
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -89,10 +89,9 @@ async def start(bot, update):
         return
 
     buttons = [[
-            InlineKeyboardButton('My Creator', url='https://t.me/Mahan_Official_Admin'),
-            InlineKeyboardButton('Support Group', url ='https://t.me/MahanMvgroup')
+            InlineKeyboardButton('Join Channel & Group', callback_data="getout"),
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data="close")
+            InlineKeyboardButton('Close this Page🔐', callback_data="close")
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -109,17 +108,8 @@ async def start(bot, update):
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
-    buttons = [[
-        InlineKeyboardButton('Channel', url='t.me/MahanMVMovies'),
-        InlineKeyboardButton('Group', url='t.me/MahanMVGroup')
-    ]]
-    
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_TEXT,
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
+        parse_mode="html"
+     )
