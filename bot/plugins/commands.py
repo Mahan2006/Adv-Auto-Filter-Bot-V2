@@ -89,7 +89,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-            InlineKeyboardButton('Join Channel & Group', callback_data="getout"),
+            InlineKeyboardButton('Join Channel & Group', callback_data="start"),
         ],[
             InlineKeyboardButton('Close this Page🔐', callback_data="close")
         ]]
