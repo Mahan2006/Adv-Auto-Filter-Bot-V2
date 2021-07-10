@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @Mahan_Official_Admin
+# (c) @Mahan_Official_Admin | @MahanMVAdmin | @Anonymous-SK
 
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Auto Filter Bot....😉
+<b>Am Just A Auto Filter Bot.
 
 I was Made only for @MahanMVGroup, you can use me there.
-</i>"""    
+</b>"""    
     
-    HELP_TEXT = """I cannot help you here.😅 \n\nJoin our channel and group for help"""
+    HELP_TEXT = """Help!"""
